@@ -1,0 +1,88 @@
+/*------------------ Header --------------------------------------------------------------------------------*/
+header{
+    display: flex;
+    height: 100vh;
+    padding: 0px 25px;
+    flex-direction: column;
+    align-items: start;
+    gap: 55px;
+    user-select: none;
+}
+header > img{
+    margin-top: 45px;
+    width: 79px;
+    height: 56px;
+    filter: drop-shadow(0px 0px 50px rgb(202, 50, 50));
+}
+header section{
+    border-radius: 16px;
+    background: rgba(116, 66, 66, 0.10);
+    backdrop-filter: blur(10px);
+    display: flex;
+    padding: 24px 20px;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+header section p{
+    display: none;
+}
+header section button{
+    width: auto;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    gap: 13px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+header section .actual_button{
+    background: #BB0808;
+}
+header section button img{
+    width: 23px;
+    height: 23px;
+}
+
+header section button:hover{
+    gap: 20px;
+    background-color: #bb080814;
+}
+header section .actual_button:hover{
+    background: #BB0808;
+}
+
+/*------------------ Header --------------------------------------------------------------------------------*/
+
+
+/*------------------ Responsive --------------------------------------------------------------------------------*/
+@media (orientation: portrait) and (max-width: 650px) {
+    header{
+        width: 86vw;
+        height: auto;
+        align-items: center;
+    }
+    header > img{
+        display: none;
+    }
+    header > section{
+        flex-direction: row;
+        width: 80vw;
+        padding: 15px 20px;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 354px) {
+    header > section{
+        overflow-x: scroll;
+    }
+}
+/*------------------ Responsive --------------------------------------------------------------------------------*/

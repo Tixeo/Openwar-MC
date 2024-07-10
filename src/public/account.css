@@ -1,0 +1,131 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    margin-right: 25px;
+    
+}
+main > section{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    align-items: center;
+    gap: 30px;
+    border-radius: 16px;
+    background: rgba(116, 66, 66, 0.10);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    height: 100%;
+    width: 100%;
+}
+section > .skinViewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 100px;
+    border-radius: 16px;
+    background: rgba(116, 66, 66, 0.10);
+    transition: 0.3s
+}
+.skinViewer > img {
+    height: 100%;
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#userInfo {
+    user-select: text;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.textes{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.texte, .username{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+}
+
+.texte p:nth-child(2){
+    color: #FFF;
+}
+.username{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16.8px;
+    gap: 8px;
+}
+.username p:nth-child(1){
+    user-select: none;
+    display: flex;
+    font-size: 13px;
+    padding: 3px 7px;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 15px;
+    background: #BB0808;
+}
+main > section button {
+    display: flex;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    border: 2px solid #9F2727;
+    background: rgba(116, 66, 66, 0.10);
+    backdrop-filter: blur(16px);
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+@media only screen and (max-width: 1048px) {
+    section > .skinViewer {
+        padding: 30px 50px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    main section{
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        justify-content: start;
+        padding: 20px;
+    }
+    main{
+        height: 70vh;
+    }
+    section > .skinViewer {
+        padding: 15px 10px;
+        width: 100%;
+    }
+}

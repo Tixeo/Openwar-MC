@@ -1,0 +1,188 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-right: 25px;
+    max-height: 80vh;
+}
+main > section{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    padding-top: 67px;
+    align-items: center;
+    gap: 37px;
+    align-self: stretch;
+    border-radius: 16px;
+    background: rgba(116, 66, 66, 0.10);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+main > section > #topPlayers{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 97%;
+    gap: 10px;
+} 
+.podium{
+    display: flex;
+    width: 277px;
+    padding: 338px 0px 30px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 184, 0, 0.50);
+    background: linear-gradient(164deg, rgba(235, 0, 0, 0.50) -57.8%, rgba(0, 0, 0, 0.00) 112.62%), linear-gradient(166deg, #161414 49.18%, rgba(21, 22, 22, 0.00) 154.37%), #141414;
+}
+.top3{
+    padding: 298px 0px 30px 0px;
+    border: 2px solid rgba(158, 158, 158, 0.50);
+    background: linear-gradient(164deg, rgba(235, 0, 0, 0.30) -57.8%, rgba(0, 0, 0, 0.00) 112.62%), linear-gradient(166deg, #161414 49.18%, rgba(21, 22, 22, 0.00) 154.37%), #141414;
+}
+.top1{
+    padding: 258px 0px 30px 0px;
+    border: 2px solid rgba(92, 57, 57, 0.50);
+    background: linear-gradient(164deg, rgba(235, 0, 0, 0.20) -57.8%, rgba(0, 0, 0, 0.00) 112.62%), linear-gradient(166deg, #161414 49.18%, rgba(21, 22, 22, 0.00) 154.37%), #141414;
+}
+.podium img{
+    height: 352px;
+    position: absolute;
+    top: 20px;
+}
+
+.textes{
+    user-select: text;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.textes10{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    user-select: text;
+}
+.texte, .username{
+    user-select: text;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+}
+.podium .playerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.texte p:nth-child(2){
+    color: #FFF;
+}
+.username{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16.8px;
+    gap: 8px;
+}
+.username p:nth-child(1){
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    font-size: 13px;
+    padding: 3px 7px;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 15px;
+    background: #BB0808;
+}
+
+#topTen{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 97%;
+}
+.player{
+    display: flex;
+    padding: 14px 24px 14px 20px;
+    align-items: center;
+    gap: 17px;
+    border-radius: 16px;
+    border: 1.7px solid rgba(159, 39, 39, 0.30);
+    background: linear-gradient(164deg, rgba(235, 0, 0, 0.20) -57.8%, rgba(0, 0, 0, 0.00) 112.62%), linear-gradient(166deg, #161414 49.18%, rgba(21, 22, 22, 0.00) 154.37%), #141414;
+}
+.player img{
+    width: 62.024px;
+    border-radius: 3px;
+}
+.player .playerContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    main section{
+        flex-direction: column;
+        overflow-y: scroll;
+        justify-content: start;
+    }
+    main{
+        height: 70vh;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 650px){
+    main{
+        margin-right: 0px;
+        height: 80%;
+        margin-bottom: 20px;
+    }
+    main > section{
+        margin: 0 5.5vw;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1362px) {
+    main > section > #topPlayers{
+        gap: 10px;
+    } 
+    .podium{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 788px) {
+    main > section > #topPlayers{
+        flex-direction: column;
+        gap: 10px;
+    } 
+    .podium{
+        width: 100%;
+    }
+    .podium img{
+        top: auto;
+        margin-top: -370px;
+    }
+    .podium{
+        padding: 400px 0px 30px 0px;
+    }
+}
+

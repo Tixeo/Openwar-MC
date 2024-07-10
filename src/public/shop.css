@@ -1,0 +1,229 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-right: 25px;
+    max-height: 80vh;
+}
+main > section{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    align-items: start;
+    gap: 37px;
+    align-self: stretch;
+    border-radius: 16px;
+    background: rgba(116, 66, 66, 0.10);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    overflow-y: scroll;
+    user-select: text;
+}
+.gradeContainer, .keyContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 37px;
+    transition: 0.3s;
+}
+.card{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-radius: 16px;
+    border: 2px solid rgba(159, 39, 39, 0.50);
+    background-image: url(images/MercenaryCard.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #BB0808;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+}
+.key{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    border: 2px solid rgba(159, 39, 39, 0.50);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    border: 2px solid rgba(92, 57, 57, 0.50);
+    background: linear-gradient(164deg, rgba(235, 0, 0, 0.20) -57.8%, rgba(0, 0, 0, 0.00) 112.62%), linear-gradient(166deg, #161414 49.18%, rgba(21, 22, 22, 0.00) 154.37%), #141414;
+}
+.keyName{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.spanName{
+    user-select: none;
+    display: flex;
+    font-size: 11px;
+    height: 22px;
+    padding: 0px 7px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: #BB0808;
+}
+
+.key button {
+    display: flex;
+    padding: 7px 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    border: none;
+    background: #BB0808;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+    user-select: none;
+}
+.priceCard{
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+}
+.priceCard p:nth-child(2){
+    color: #B4B4B4;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 39px;
+}
+.card button{
+    display: flex;
+    height: 48px;
+    padding: 13px 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    border: none;
+    background: #BB0808;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.16);
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 13.5px;
+    font-weight: 300;
+    box-shadow: rgba(246, 193, 193, 0.698) 0px 0px 0px 0px;
+    animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
+    transition: all 0.2s ease-in-out 0s;
+    cursor: pointer;
+    user-select: none;
+}
+.card .fonctionnalites{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color: #C5C5C5;
+    font-family: Poppins;
+    font-size: 14.5px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 24px;
+}
+.card .fonctionnalites b{
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 600;
+}
+.fonction{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    height: 154px;
+}
+.fonctionGhost{
+    overflow-y: scroll;
+}
+.fonction li {
+    list-style: none; 
+    margin-left: 20px;
+    position: relative;
+}
+
+.fonction li:before {
+    content: url(icons/marker.svg);
+    position: absolute;
+    left: -20px;
+    top: 60%;
+    transform: translateY(-50%);
+}
+.CardGhost{
+    background-image: url(images/GhostCard.png);
+}
+
+.card button:is(:hover, :focus) {
+    transform: scale(1.15);
+  }
+  
+  @keyframes pulse {
+    100% {
+      box-shadow: 0 0 0 25px rgba(193,244,246,0);
+    }
+  }
+  
+
+@media only screen and (max-width: 800px) {
+    main section{
+        flex-direction: column;
+        overflow-y: scroll;
+        justify-content: start;
+    }
+    main section > div{
+        flex-direction: column;
+    }
+    main{
+        height: 70vh;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 650px){
+    main{
+        margin-right: 0px;
+        height: 80%;
+        margin-bottom: 20px;
+    }
+    main > section{
+        margin: 0 5.5vw;
+    }
+}

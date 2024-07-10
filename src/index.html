@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Openwar ｜ Stable Edition</title>
+
+    <link rel="stylesheet" href="/public/global.css">
+    <link rel="stylesheet" href="public/header.css">
+    <link rel="stylesheet" href="/public/modal.css">
+    <link rel="shortcut icon" href="public/images/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="public/images/logo.png">
+        <section>
+            <a href="#home" data-page="home"><button class=""><img src="public/icons/home-icon.svg" alt=""><p>Home</p></button></a>
+            <a href="#shop" data-page="shop"><button class=""><img src="public/icons/market-icon.svg" alt=""><p>Shop</p></button></a>
+            <a href="#stats" data-page="stats"><button class=""><img src="public/icons/leaderbord-icon.svg" alt=""><p>Statistics</p></button></a>
+            <a href="https://openwarserver.gitbook.io/wiki/overview/le-serveur-dopenwar" target="_blank"><button class=""><img src="public/icons/doc-icon.svg" alt=""><p>Docs</p></button></a>
+            <a href="#map" data-page="map"><button class=""><img src="public/icons/map-icon.svg" alt=""><p>Map</p></button></a>
+            <button id="openCodeModal" class=""><img src="public/icons/key-icon.svg" alt=""><p>Code</p>
+            <button id="openVoteModal" class=""><img src="public/icons/vote-icon.svg" alt=""><p>Vote</p></button>
+            <button style="display: none;" id="openConnexionModal" class="cennected?HeaderRedirectionId"><img id="cennected?HeaderImg" alt=""><p id="cennected?HeaderValue"></p></button>
+        </section>
+        <div class="transparentr"></div>
+    </header>
+    <div id="content">
+    </div>
+
+    <div id="voteModal" class="modal">
+        <div class="modal_content">
+            <div class="textModal">
+                <div>
+                    <h2>Vote - OpenWar</h2>
+                    <p>Vote for in-game rewards!</p>
+                </div>
+                <img id="closeVoteModal" src="public/icons/close-icons.svg" alt="" height="30px">
+            </div>
+            <section>
+                <a href="https://minecraftservers.org/vote/660955" target="about_blank"><button class="modalButton">Link
+                        1</button></a>
+                <a href="https://top-serveurs.net/minecraft/vote/openwar" target="about_blank"><button
+                        class="modalButton">Link 2</button></a>
+                <a href="https://serveur-prive.net/minecraft/openwar/vote" target="about_blank"><button
+                        class="modalButton">Link 3</button></a>
+            </section>
+        </div>
+    </div>
+    <div id="connexionModal" class="modal">
+        <div class="modal_content">
+            <div class="textModal">
+                <div>
+                    <h2>Login - OpenWar</h2>
+                    <p>Log in to see your statistics!</p>
+                </div>
+                <img id="closeConnexionModal" src="public/icons/close-icons.svg" alt="" height="30px">
+            </div>
+            <div>
+                <input id="username" class="modalButton" type="text" placeholder="Pseudo Minecraft">
+                <p style="padding-top: 5px;" id="result"></p>
+            </div>
+            <button class="modalButton" id="checkUserButton">Login</button>
+        </div>
+    </div>
+    <div id="codeModal" class="modal">
+        <div class="modal_content">
+            <div class="textModal">
+                <div>
+                    <h2>Redeem Code - OpenWar</h2>
+                    <p>Enter your code to receive your product in-game!</p>
+                </div>
+                <img id="closeCodeModal" src="public/icons/close-icons.svg" alt="" height="30px">
+            </div>
+            <div class="inputsModal">
+                <input id="redeemcodeUsername" class="modalButton" type="text" placeholder="Enter your Minecraft username">
+                <div>
+                    <input id="redeemcode" class="modalButton" type="text" placeholder="Enter code">
+                    <p style="padding-top: 5px;" id="resultRedeem"></p>
+                </div>
+            </div>
+            <button class="modalButton" id="receiveProductButton">Receive</button>
+        </div>
+    </div>
+    <link href="https://cdn.sellix.io/static/css/embed.css" rel="stylesheet" />
+    <script src="https://cdn.sellix.io/static/js/embed.js"></script>
+    <script type="module" src="public/js/main.js"></script>
+    <script src="public/js/login.js"></script>
+    <script src="public/js/detectAgent.js"></script>
+</body>
+
+</html>

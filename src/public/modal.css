@@ -1,0 +1,96 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+}
+
+.modal_content {
+    border-radius: 10px;
+    border: 1.5px solid #9F2727;
+    background: rgba(117, 56, 56, 0.20);
+    backdrop-filter: blur(10px);
+    display: flex;
+    padding: 45px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 45px;
+    animation: apparitionModal 0.3s ease-in-out forwards;
+    color: #FFF;
+    font-size: 24px;
+    width: 752px;
+}
+.modal_content img{
+    cursor: pointer;
+    user-select: none;
+}
+.textModal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    user-select: text;
+}
+.textModal p, .modal p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.60);
+}
+@media only screen and (max-width: 934px) {
+    .modal_content{
+        width: 70%;
+    }
+    .inputsModal{
+        width: 70%;
+    }
+}
+
+
+.inputsModal{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal input{
+    width: 100%;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.modalButton{
+    display: flex;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    border: 2px solid #9F2727;
+    background: rgba(116, 66, 66, 0.10);
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+}
+.modal section{
+    display: flex;
+    gap: 16px;
+}
+@keyframes apparitionModal {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

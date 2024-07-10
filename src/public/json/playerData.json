@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Hugogo61",
+    "uuid": "0cd324e3-5d79-42bc-94e5-2492dcfb5352",
+    "level": 25,
+    "kills": 36,
+    "deaths": 7,
+    "casinoPerte": 6700,
+    "casinoGain": 4324,
+    "permission": "default",
+    "skinURL": "https://mc-heads.net/body/0cd324e3-5d79-42bc-94e5-2492dcfb5352/right"
+  },
+  {
+    "name": "_Chapy_",
+    "uuid": "2c1dd0e8-a414-49ec-ae13-df23a8fe17ad",
+    "level": 393,
+    "kills": 16,
+    "deaths": 3,
+    "casinoPerte": 6300,
+    "casinoGain": 4500,
+    "permission": "admin",
+    "skinURL": "https://mc-heads.net/body/2c1dd0e8-a414-49ec-ae13-df23a8fe17ad/right"
+  },
+  {
+    "name": "Theodrien",
+    "uuid": "53145b1f-3a3e-41cf-89c5-4eb69cd4209f",
+    "level": 56,
+    "kills": 16,
+    "deaths": 3,
+    "casinoPerte": 6300,
+    "casinoGain": 4500,
+    "permission": "ghost",
+    "skinURL": "https://mc-heads.net/body/53145b1f-3a3e-41cf-89c5-4eb69cd4209f/right"
+  },
+  {
+    "name": "camiauxchoux",
+    "uuid": "098c532c-4192-43e5-a445-b644e0d51645",
+    "level": 24,
+    "kills": 51,
+    "deaths": 6,
+    "casinoPerte": 6956,
+    "casinoGain": 4564,
+    "permission": "default",
+    "headURL": "https://minotar.net/avatar/098c532c-4192-43e5-a445-b644e0d51645"
+  },
+  {
+    "name": "Jus2MywtilleV2",
+    "uuid": "08d82988-860e-4b03-b1b0-1a8e9bc2dd4a",
+    "level": 23,
+    "kills": 39,
+    "deaths": 4,
+    "casinoPerte": 7212,
+    "casinoGain": 4820,
+    "permission": "default",
+    "headURL": "https://minotar.net/avatar/08d82988-860e-4b03-b1b0-1a8e9bc2dd4a"
+  },
+  {
+    "name": "hjnghklnhk",
+    "uuid": "069733da-11fa-4139-94eb-a77f3b9dcc78",
+    "level": 22,
+    "kills": 49,
+    "deaths": 5,
+    "casinoPerte": 8492,
+    "casinoGain": 5316,
+    "permission": "default",
+    "headURL": "https://minotar.net/avatar/069733da-11fa-4139-94eb-a77f3b9dcc78"
+  },
+  {
+    "name": "Derited",
+    "uuid": "05c3de09-7658-478f-8f97-2f1dc078c2ac",
+    "level": 21,
+    "kills": 41,
+    "deaths": 4,
+    "casinoPerte": 7980,
+    "casinoGain": 5044,
+    "permission": "mercenary",
+    "headURL": "https://minotar.net/avatar/05c3de09-7658-478f-8f97-2f1dc078c2ac"
+  },
+  {
+    "name": "Le_Pat71",
+    "uuid": "04161259-0a74-4dff-a010-e6a8c4b34687",
+    "level": 20,
+    "kills": 40,
+    "deaths": 6,
+    "casinoPerte": 7468,
+    "casinoGain": 5332,
+    "permission": "default",
+    "headURL": "https://minotar.net/avatar/04161259-0a74-4dff-a010-e6a8c4b34687"
+  },
+  {
+    "name": "Loufito54",
+    "uuid": "05ad1764-b3db-4d36-9908-473dd8955ac2",
+    "level": 19,
+    "kills": 35,
+    "deaths": 3,
+    "casinoPerte": 7724,
+    "casinoGain": 4804,
+    "permission": "default",
+    "headURL": "https://minotar.net/avatar/05ad1764-b3db-4d36-9908-473dd8955ac2"
+  },
+  {
+    "name": "mrfafidoo",
+    "uuid": "a11ebd3b-058f-496d-9519-80e2963ff52c",
+    "level": 18,
+    "kills": 16,
+    "deaths": 3,
+    "casinoPerte": 6300,
+    "casinoGain": 4500,
+    "permission": "mod",
+    "headURL": "https://minotar.net/avatar/a11ebd3b-058f-496d-9519-80e2963ff52c"
+  }
+]
