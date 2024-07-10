@@ -50,5 +50,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you have any questions :
 
 - Discord : tixeo#0000
-- Email: your-email@example.com
 - GitHub: [Tixeo](https://github.com/Tixeo)
